@@ -1,70 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="font-open-sans min-h-screen">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="stylesheet" href="./css/styles.css">
   
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body class="flex flex-col justify-center leading-7">
 
-  Try It Free
+  <!-- Header -->
+  <header class="p-32P bg-very-pale-cyan">
 
-  Build The Community Your Fans Will Love
+    <nav class="flex justify-between items-center mb-64M">
+      <img class="3xs:w-1/3 lg:w-auto h-1/3 m-w-container-2xs" src="./images/logo.svg" alt="huddle">
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+      <button class="rounded-full bg-white px-32P font-bold text-sm">
+        Try It Free
+      </button>
+    </nav>
+    
+    <article class="flex justify-center items-center 3xs:flex-col lg:flex-row gap-10">
+      <div class="flex flex-col justify-center 3xs:items-center lg:items-start gap-8 3xs:text-center lg:text-start m-w-container-3xs">
 
-  Get Started For Free
+        <h1 class="font-bold 3xs:text-lg sm:text-xl xl:text-2xl">
+          Build The Community Your Fans Will Love
+        </h1>
 
-  Grow Together
+        <p>
+          Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion. 
+        </p>
 
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
+        <button class="rounded-full px-32P bg-pink text-white font-bold 3xs:w-full sm:w-1/2 py-16P">
+          Get Started For Free
+        </button>
 
-  Flowing Conversations
+      </div>
 
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads 
-  have just-in-time loading for a more natural flow.
+      <img class="3xs:w-full lg:w-1/2" src="./images/illustration-mockups.svg" alt="mockups">
+    </article>
 
-  Your Users
+  </header>
 
-  It takes no time at all to integrate Huddle with your app's authentication solution. 
-  This means, once signed in to your app, your users can start chatting immediately.
+  <!-- Main -->
+  <main class="px-32P py-32P flex flex-col justify-center items-center gap-20">
 
-  Ready To Build Your Community?
+    <!-- --Section 1-- -->
+    <section class="p-48P shadow rounded-20BR flex 3xs:flex-col lg:flex-row-reverse 3xs:justify-center items-center lg:justify-between gap-10">
+      <img class="3xs:w-full lg:w-1/2 3xs:h-full lg:h-1/2" src="./images/illustration-grow-together.svg" alt="together we grow">
 
-  Get Started For Free
+      <article class="flex flex-col gap-2 3xs:text-center lg:text-start mt-16M 3xs:w-full lg:w-1/2">
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua
+        <h2 class="font-bold 3xs:text-lg lg:text-2xl mb-16M">
+          Grow Together
+        </h2>
 
-  +1-543-123-4567
-  example@huddle.com
+        <p class="text-grayish-blue 3xs:text-md lg:text-xl 3xs:leading-0 lg:leading-10">
+          Generate meaningful discussions with your audience and build a strong, loyal community. 
+          Think of the insightful conversations you miss out on with a feedback form. 
+        </p>
 
-  About Us
-  What We Do
-  FAQ
+      </article>
+    </section>
+    
+    <!-- --Section 2-- -->
+    <section class="p-48P shadow rounded-20BR flex 3xs:flex-col lg:flex-row 3xs:justify-center items-center lg:justify-between gap-10">
+      <img class="3xs:w-full lg:w-1/2 3xs:h-full lg:h-1/2" src="./images/illustration-flowing-conversation.svg" alt="conversations flow">
 
-  Career
-  Blog
-  Contact Us
+      <article class="flex flex-col gap-2 3xs:text-center lg:text-start mt-16M 3xs:w-full lg:w-1/2">
 
-  &copy; Copyright 2018 Huddle. All rights reserved.
+        <h2 class="font-bold 3xs:text-lg lg:text-2xl mb-16M">
+          Flowing Conversations
+        </h2>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+        <p class="text-grayish-blue 3xs:text-md lg:text-xl 3xs:leading-0 lg:leading-10">
+          You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+          have just-in-time loading for a more natural flow.
+        </p>
+
+      </article>
+    </section>
+  
+    <!-- --Section 3-- -->
+    <section class="p-48P shadow rounded-20BR flex 3xs:flex-col lg:flex-row-reverse 3xs:justify-center items-center lg:justify-between gap-10">
+      <img class="3xs:w-full lg:w-1/2 3xs:h-full lg:h-1/2" src="./images/illustration-your-users.svg" alt="your users">
+
+      <article class="flex flex-col gap-2 3xs:text-center lg:text-start mt-16M 3xs:w-full lg:w-1/2">
+
+        <h2 class="font-bold 3xs:text-lg lg:text-2xl mb-16M">
+          Your Users
+        </h2>
+
+        <p class="text-grayish-blue 3xs:text-md lg:text-xl 3xs:leading-0 lg:leading-10">
+          It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.
+        </p>
+
+      </article>
+    </section>
+  
+    <!-- --Section 4-- -->
+    <section class="p-48P shadow rounded-20BR flex flex-col justify-center items-center text-center relative top-128I z-10 bg-white">
+
+      <h2 class="font-bold 3xs:text-lg lg:text-xl mb-32M">
+        Ready To Build Your Community?
+      </h2>
+
+      <button class="rounded-full px-16P bg-pink text-white font-bold 3xs:w-full md:w-2/3 py-16P">
+        Get Started For Free
+      </button>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="flex 3xs:flex-col xl:flex-row 3xs:justify-start xl:justify-around items-center bg-very-dark-cyan text-white p-32P pb-64P pt-128P z-0">
+
+    <article class="flex 3xs:flex-col xl:flex-row 3xs:justify-start xl:justify-center 3xs:items-start xl:items-center 3xs:gap-10 xl:gap-40 mr-socialM">
+      <div class="3xs:mr-32M xl:mr-0 flex flex-col justify-start items-start mb-32M 3xs:w-auto xl:w-1/4">
+        <img class="mb-32M" src="./images/logo_white.svg" alt="huddle">
+  
+        <div class="mb-32M 3xs:pr-32P xl:pr-0 flex justify-start items-center gap-4 w-auto">
+          <img class="w-24W h-24H" src="./images/icon-location.svg" alt="location">
+          <p class="max-w-container-xs">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+  
+        <div class="mb-32M flex justify-start items-center gap-4">
+          <img class="w-24W h-24H" src="./images/icon-phone.svg" alt="phone number">
+          <p>
+            +1-543-123-4567
+          </p>
+        </div>
+  
+        <div class="mb-32M flex justify-start items-center gap-4">
+          <img class="w-24W h-24H" src="./images/icon-email.svg" alt="email">
+          <p>
+            example@huddle.com
+          </p>
+        </div>
+      </div>
+  
+    <div class="flex flex-col justify-center items-start">
+      <a class="mb-16M" href="#">About Us</a>
+      <a class="mb-16M" href="#">What We Do</a>
+      <a class="mb-16M" href="#">FAQ</a>
+    </div>
+
+    <div class="flex flex-col justify-center items-start">
+      <a class="mb-16M" href="#">Career</a>
+      <a class="mb-16M" href="#">Blog</a>
+      <a class="mb-16M" href="#">Contact Us</a>
+    </div>
+  </article>
+
+  <article class="flex flex-col items-start justify-start">
+    <div class="3xs:mt-16M xl:mt-0 3xs:mx-auto xl:mx-0 flex flex-row gap-4 justify-center items-center">
+      <div class="flex items-center justify-center w-16W h-16H p-22.4P border border-white rounded-full">
+        <i class="fa-brands fa-facebook-f text-white text-xl"></i>
+      </div>
+      <div class="flex items-center justify-center w-16W h-16H p-22.4P border border-white rounded-full">
+        <i class="fa-brands fab fa-twitter text-white text-xl"></i>
+      </div>
+      <div class="flex items-center justify-center w-16W h-16H p-22.4P border border-white rounded-full">
+        <i class="fa-brands fab fa-instagram text-white text-xl"></i>
+      </div>
+    </div>
+  
+    <p class="mx-auto 3xs:mt-16M xl:mt-0 3xs:static xl:relative xl:top-140I">
+      &copy; Copyright 2018 Huddle. All rights reserved.
     </p>
+  </article>
+
   </footer>
 </body>
 </html>
